@@ -42,7 +42,7 @@ namespace Language_Packer
             {
                 var document = new Model.File();
                 document.Name = documentName;
-                document.Content = "<?xml version=\"1.0\" encoding=\"utf - 8\"?>\n<LanguageData> ";
+                document.Content = "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<LanguageData> ";
                 foreach (var entry in entries[documentName])
                     document.Content += "\n\t" + entry;
                 document.Content += "\n</LanguageData>";
